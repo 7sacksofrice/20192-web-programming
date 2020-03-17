@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Information</title>
+    </head>
+    <body>
+        <form action="Form4Radio.php" 
+              method="POST">
+            
+            <h2 style="color: blue"> Personal Information </h2>
+                
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td>Enter Full Name:</td>
+                            <td><input type="text" name="name" value="" size="30" /></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Class:</td>
+                            <td><input type="text" name="class" value="" size="30" /></td>
+                        </tr>
+                        <tr>
+                            <td>Enter University:</td>
+                            <td><input type="text" name="uni" value="" size="30" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            Check Hobby:  
+                <br><input type='hidden' value='0' name='soccer'>
+                    <input type='checkbox' value='1' name='soccer'> Playing Soccer
+                    
+                    <br><input type='hidden' value='0' name='film'>
+                    <input type='checkbox' value='1' name='film'> Watching Films
+                    
+                    <br><input type='hidden' value='0' name='music'>
+                    <input type='checkbox' value='1' name='music'> Listening to Music
+                    
+                    <br><label for="other">Others (separated by comma - ","):</label>
+                    <textarea id="other" name="other" rows="2" cols="50"> </textarea>
+            <br><input type="submit" value="Click To Submit"> <input type="reset" value="Erase and Restart">
+            
+        </form>
+
+    </body>
+</html>
