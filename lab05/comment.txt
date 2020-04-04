@@ -1,0 +1,13 @@
+Exercise 5.2:
+* In Step 2: Print out 
+   "In SubClass contructor
+     Destroying SubClass"
+
+* In Step 3: Print out 
+   "In SubClass contructor
+     In BaseClass contructor
+     Destroying SubClass
+     Destroying BaseClass"
+
+Exercise 5.4:
+* Change in $ot also affect $ot2 since they both refer to the same object.
