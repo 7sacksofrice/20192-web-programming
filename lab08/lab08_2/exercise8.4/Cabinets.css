@@ -1,0 +1,21 @@
+h1 { text-align: center;}
+header {
+    text-align: center;
+}
+p {
+    margin: 0.25in;
+    border: 0.25in solid black;
+    padding: 0.25in;
+    background: url(images/bond-paper.jpg);
+}
+body {
+    background: url(images/bricks.jpg);
+}
+.banner {
+    display: inline-block;
+    width: 360px;
+    height: 199px;
+    background: url(images/boards.jpg) repeat-x;
+    font-size: 50pt;
+    font-family: Arial Rounded MT Bold;
+}

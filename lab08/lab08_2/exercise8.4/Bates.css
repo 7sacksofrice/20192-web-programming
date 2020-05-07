@@ -1,0 +1,25 @@
+body {
+    background-image: url("images/bond-paper.jpg");
+    background-size: cover;
+}
+span {
+    float: left;
+    font-family: "Cushing Book";
+    font-size: 75pt;
+}
+div {margin-top: 5px}
+header {
+    font-family: sans-serif;
+}
+div.rhead {
+    text-align: right;
+    margin-right: 0.5in;
+}
+div.body {
+    text-align: justify;
+    text-indent: 0.5in;
+}
+footer {
+    margin-left: 60%;
+    line-height: 300%;
+}
