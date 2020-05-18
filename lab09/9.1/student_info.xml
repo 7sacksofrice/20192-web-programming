@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DOCTYPE students [
+    <!ELEMENT students (name, sex, class, email) *>
+    <!ELEMENT name (firstname, lastname)>
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT sex (#PCDATA)>
+    <!ELEMENT class (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+]>
+<students>
+    <name>
+        <firstname> Sinh Hung </firstname>
+        <lastname> Nguyen </lastname>
+    </name>
+    <sex> male </sex>
+    <class> ict01-k61 </class>
+    <email> hung.ns161960@sis.hust.edu.vn </email>
+</students>
