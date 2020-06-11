@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+        function validUsername() {
+            var data = document.getElementById('username').value;
+
+            if(data) {
+                document.getElementById('username_message').innerText = "-> Valid input";
+            } else{
+                document.getElementById('username_message').innerText = "-> Invalid input";
+            }
+        }
+        
+        function validEmail() {
+            var data = document.getElementById('email').value;
+   
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            var res = re.test(String(data).toLowerCase());
+
+            if(res) {
+                document.getElementById('email_message').innerText = "-> Valid input";
+            } else{
+                document.getElementById('email_message').innerText = "-> Invalid input";
+            }
+        }
+        
+        function validTelephone() {
+            var data = document.getElementById('telephone').value;
+   
+            // alert(data);
+            const re = /^\d{10}$/;
+            var res = re.test(String(data));
+            // alert(res);
+
+            if(res) {
+                document.getElementById('telephone_message').innerText = "-> Valid input";
+            } else{
+                document.getElementById('telephone_message').innerText = "-> Invalid input";
+            }
+        }
+        </script>
+    </head>
+    <body>
+	<form name="testForm">
+            username: <input type="text"  onkeyup="validUsername();" name="username" id="username" /> 
+            <div id="username_message"></div>
+            <br/>
+            
+            email: <input type="text"  onkeyup="validEmail();" name="email" id="email" /> 
+            <div id="email_message"></div>
+            <br/>
+            
+            telephone: <input type="text"  onkeyup="validTelephone();" name="telephone" id="telephone" /> 
+            <div id="telephone_message"></div>
+            <br/>  
+        </form>
+    </body>
+</html>

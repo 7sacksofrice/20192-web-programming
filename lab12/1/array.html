@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+        // create an array and add 3 elements
+        var myArray = new Array();
+        myArray.push("Tim");
+        myArray.push("Janice");
+        myArray.push("Joe");
+
+        // print out the content and newline
+        document.writeln(myArray.toString() );
+        document.writeln("<br/>");
+
+        // access array element by index
+        document.writeln( myArray[1] );
+        document.writeln( "<br/>" );
+
+        // print out the length of the array and new line 
+        document.writeln( "Array Size: " + myArray.length );
+        document.writeln( "<br/>" );
+
+        // pop the last element off the array and display it
+        var who = myArray.pop();
+        document.writeln("Popped Element: " + who );
+        document.writeln( "<br/>" );
+
+        // print out the new length of the array and new line 
+        document.writeln( "New Array Size: " + myArray.length );
+        document.writeln( "<br/>" );
+        document.writeln( "<br/>" );
+
+        /*******************/
+
+        // populating array on instantiation
+        var otherArray = new Array("dog", 3, 8.4 );
+
+        document.writeln( otherArray.toString() );
+        document.writeln( "<br/>" );
+        document.writeln( "<br/>" );
+
+        // setting and accesssing associative array
+        otherArray["key"] = "value";
+        document.writeln( otherArray["key"] );
+        document.writeln( "<br/>" );
+        document.writeln( otherArray.toString() );
+
+        </script>
+    </body>
+</html>
